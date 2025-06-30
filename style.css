@@ -197,7 +197,25 @@ tr:hover {
     color: #000;
     background: gold;
 }
+/*responsive*/
+@media (max-width: 600px) {
+    .profile{
+        gap: 15px;
+    }
+    .profile h2{
+        gap: 10px;
+    }
+    .menu{
+        width: 28px;
+    }
 
+    ul li a{
+        gap: 10px;
+    }
+    ul li a:hover, .active{
+        width: 100%;
+    }
+}
 /* Fade-in animation for body */
 @keyframes fadeInBody {
   0% {
