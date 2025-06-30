@@ -198,7 +198,7 @@ tr:hover {
     background: gold;
 }
 /*responsive*/
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .profile{
         gap: 15px;
     }
