@@ -201,12 +201,15 @@ tr:hover {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   ul li a {
-    gap: 30px;
+    gap: 10px;
   }
-
-  .menu {
-    height: 100vh;
+  .menu{
+    width: 28px;
   }
+  .menu:hover{
+    width: 280px;
+  }
+  
 }
 
 /* Fade-in animation for body */
