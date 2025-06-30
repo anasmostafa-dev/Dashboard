@@ -208,6 +208,8 @@ tr:hover {
     .menu{
         width: 28px;
     }
+    .menu:hover{
+        width: 280px;
 
     ul li a{
         gap: 10px;
