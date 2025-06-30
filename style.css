@@ -1,0 +1,232 @@
+/* Reset default styles */
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body animation on load */
+body{
+    background: #011;
+    display: flex;
+    opacity: 0;
+    animation: fadeInBody 1s ease forwards;
+}
+
+/* Sidebar menu styles */
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+
+/* Profile image styles */
+.img-box{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+.img-box img{
+    width: 100%;
+}
+
+/* Profile section layout */
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.profile h2{
+    color: aliceblue;
+    font-size: 18px;
+}
+
+/* Sidebar menu box */
+.menu{
+    height: 100vh;
+    background-color: #123;
+    width: 47px;
+    padding: 20px;
+    overflow: hidden;
+    transition: .4s;
+
+    /* Slide-in animation */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 1s ease forwards;
+    animation-delay: 0.8s;
+}
+.menu:hover{
+    width: 260px;
+}
+
+/* Menu links */
+ul li a{
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: .5s;
+}
+ul li a:hover, .active{
+    background: #ffffff55;
+}
+
+/* Logout button */
+.logout{
+    position: absolute;
+    bottom: 0px;
+    align-items: center;
+    background: rgb(255, 0, 0);
+    width: 90%;
+}
+
+/* Icons and link text */
+li a i{
+    font-size: 22px;
+}
+li a p{
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+/* Main content area */
+.content{
+    width: 100%;
+    margin: 10px;
+
+    /* Slide-in animation */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 1s ease forwards;
+    animation-delay: 0.8s;
+}
+
+/* Dashboard header */
+.title-info{
+    color: #eee;
+    background: rgb(0, 128, 255);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+/* Info cards area */
+.data-info{
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Each info card */
+.data-info .box{
+    background-color: #123;
+    height: 150px;
+    flex-basis: 150px;
+    border-radius: 8px;
+    border-spacing: 10px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: .4s;
+}
+
+/* Hover effect on boxes and table cells */
+.data-info .box:hover, td:hover{
+    background: #ffffff55;
+    scale: 1.01;
+}
+
+/* Icons inside info cards */
+.data-info .box i{
+    font-size: 40px;
+}
+
+/* Text and numbers inside cards */
+.data-info .box .data{
+    text-align: center;
+}
+.data-info .box .data span{
+    font-size: 30px;
+}
+
+/* Product table */
+table{
+    color: #eee;
+    text-align: center;
+    width: 100%;
+    border-spacing: 10px;
+}
+td, th{
+    background-color: #123;
+    height: 40px;
+    border-radius: 8px;
+    transition: .3s;
+}
+th{
+    background: rgb(0, 128, 255);
+}
+tr:hover {
+    cursor: pointer;
+}
+
+/* Price and count styles */
+.price, .count{
+    padding: 6px;
+    border-radius: 6px;
+}
+.price{
+    background: green;
+}
+.count{
+    color: #000;
+    background: gold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  ul li a {
+    gap: 30px;
+  }
+
+  .menu {
+    height: 100vh;
+  }
+}
+
+/* Fade-in animation for body */
+@keyframes fadeInBody {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Slide-in animation for sidebar and content */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
