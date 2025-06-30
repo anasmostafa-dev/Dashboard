@@ -198,20 +198,6 @@ tr:hover {
     background: gold;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  ul li a {
-    gap: 10px;
-  }
-  .menu{
-    width: 28px;
-  }
-  .menu:hover{
-    width: 280px;
-  }
-  
-}
-
 /* Fade-in animation for body */
 @keyframes fadeInBody {
   0% {
