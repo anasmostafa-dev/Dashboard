@@ -206,13 +206,10 @@ tr:hover {
         gap: 10px;
     }
     .menu{
-        width: 28px;
+        width: 33px;
     }
-    .menu:hover{
-        width: 280px;
-
     ul li a{
-        gap: 10px;
+        gap: 15px;
     }
     ul li a:hover, .active{
         width: 100%;
