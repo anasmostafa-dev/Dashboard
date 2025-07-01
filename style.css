@@ -197,8 +197,11 @@ tr:hover {
     color: #000;
     background: gold;
 }
-/*responsive*/
+/* Responsive adjustments */
 @media (max-width: 768px) {
+    .active p{  
+        font-size: 11px;
+    }
     .profile{
         gap: 15px;
     }
@@ -206,13 +209,17 @@ tr:hover {
         gap: 10px;
     }
     .menu{
-        width: 33px;
+        width: 30px;
     }
     ul li a{
-        gap: 15px;
+        gap: 12px;
     }
     ul li a:hover, .active{
         width: 100%;
+    }
+    .profile h2{
+        font-size: 15px;
+        padding-right: 15px;
     }
 }
 /* Fade-in animation for body */
