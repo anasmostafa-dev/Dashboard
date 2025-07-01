@@ -46,7 +46,7 @@ ul{
 
 /* Sidebar menu box */
 .menu{
-    height: 100vh;
+    min-height: 100vh;
     background-color: #123;
     width: 47px;
     padding: 20px;
